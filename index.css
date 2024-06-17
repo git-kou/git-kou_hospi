@@ -1,0 +1,550 @@
+body {
+    margin:0;
+    min-width:1200px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width:100%;
+}
+
+ul {
+    list-style: none;
+    padding-left:0;
+    margin:0;
+}
+
+.wrapper {
+    width:1000px;
+    margin:0 auto;
+}
+
+.flex {
+    display:flex;
+    justify-content: space-around;
+}
+
+main {
+    background:url("img/robi.jpg");
+    background-color:rgba(255,255,255,0.8);
+    background-blend-mode:lighten;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+/*レスポンシブ用*/
+
+.back {
+    width:100%;
+    height:100%;
+    transition: 0.3s;
+}
+
+.back_black {
+    background-color:rgba(0, 0, 0, 0.6);
+    position:fixed;
+    top:0;
+    z-index:997;
+}
+
+.han {
+    background-color:rgba(102, 204, 256, 0.8);
+    padding:20px 10px 7px 10px;
+    position:fixed;
+    z-index:999;
+    top:0;
+    left:0;
+}
+
+.han span {
+    width:40px;
+    margin:auto;
+    height:3px;
+    background-color:white;
+    border-radius: 10px;
+    position:relative;
+    transition:0.1s;
+    display:block;
+}
+
+.han span:nth-child(1) {
+    top:0;
+}
+
+.han span:nth-child(2) {
+    margin-top:15px;
+}
+
+.han p {
+    line-height: 0;
+}
+
+.han.active span:nth-child(1) {
+    top:8px;
+    transform: rotate(45deg);
+}
+
+.han.active span:nth-child(2) {
+    top:-10px;
+    transform: rotate(-45deg);
+}
+
+.over {
+    overflow-x: hidden;
+}
+
+.nav_media {
+    width:40%;
+    height:100%;
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:998;
+    background-color:rgba(102, 204, 256, 0.9);
+    color:white;
+    transform: translateX(100%);
+    transition: 0.3s;
+}
+
+.nav_media h2 {
+    text-align:center;
+    font-size: 30px;
+}
+
+.nav_media_active {
+    transform: translateX(0);
+}
+
+.list_media a {
+    text-align:center;
+    font-size:large;
+    border-top:2px solid white;
+    padding:10px 0;
+    color:white;
+    display:block;
+}
+
+.first_media {
+    border-bottom: 2px solid white;
+}
+
+.list_media a:hover{
+    background-color:white;
+    color:#66CCFF;
+}
+
+@media(min-width:600px) {
+    .han,.back {
+        display:none;
+    }
+}
+
+/*ヘッダー*/
+
+header {
+    background:url("img/top.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:500px;
+}
+
+.header_btn {
+    padding-top:5px;
+    text-align:right;
+}
+
+.btn a {
+    background-color:yellow;
+    color:green;
+    border:2px solid green;
+    font-size:large;
+    display: inline-block;
+    padding:10px 30px;
+    border-radius: 5px;
+}
+
+.btn a:hover {
+    background-color:green;
+    color:yellow;
+    transition: 0.2s;
+}
+
+.header_logo h1 {
+    font-size:50px;
+    background-color:rgba(102,204,256, 0.8);
+    border-radius:30%;
+    color:white;
+    display:inline-block;
+    padding:50px 100px;
+    margin:-10px;
+}
+
+.list {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .list {
+    margin-top:100px;
+}
+
+.list a {
+    font-size:large;
+    background-color:white;
+    color:#66CCFF;
+    border:3px solid #66CCFF;
+    display: block;
+    width:140px;
+    margin:-1px;
+    padding:10px 0;
+    text-align: center;
+}
+
+.first {
+    border-radius: 8px 0 0 8px;
+}
+
+.last {
+    border-radius: 0 8px 8px 0;
+}
+
+.list a:hover {
+    background-color:#66CCFF;
+    color:white;
+}
+
+main h1 {
+    text-align:center;
+    font-size:45px;
+    margin:0;
+}
+
+/*当院について*/
+
+#touin {
+    padding-top:70px;
+}
+
+#touin .touin_item {
+    display:flex;
+    margin:40px 0;
+    height:550px;
+}
+
+#touin .touin_text {
+    background-color:rgba(215, 256, 256, 0.6);
+    padding:20px 60px 20px 40px;
+    width:500px;
+    height:400px;
+}
+
+#touin .second_text {
+    padding:20px 40px 20px 60px;
+}
+
+#touin .touin_text h2 {
+    font-size:30px;
+}
+
+#touin .touin_img {
+    z-index:2;
+    margin-left:-30px;
+    margin-top:200px;
+}
+
+#touin .touin_img img {
+    width:500px;
+}
+
+#touin .second_img {
+    margin-left:0;
+    margin-right:-30px;
+}
+
+#touin span {
+    color:#0066FF;
+    font-size:60px;
+}
+
+/*診療科目*/
+
+#sinryo {
+    background-color:rgba(121,256,256, 0.5);
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+#sinryo h1 {
+    padding-bottom:50px;
+}
+
+#sinryo .sinryo_item {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+#sinryo .sinryo_box {
+    width:40%;
+    background-color:white;
+    padding:30px;
+    margin:10px;
+    border-radius: 8px;
+}
+
+#sinryo .sinryo_box h2 {
+    text-align:center;
+    font-size:40px;
+    line-height:0;
+    padding-bottom:30px;
+}
+
+#sinryo .sinryo_box h3 {
+    text-align:center;
+}
+
+.iro1 {border:5px solid red}
+.iro2 {border:5px solid green}
+.iro3 {border:5px solid brown}
+.iro4 {border:5px solid pink}
+
+/*医師紹介*/
+
+#syoukai {
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+#syoukai h1 {
+    padding-bottom:50px;
+}
+
+#syoukai .syoukai_box {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#syoukai .syoukai_img {
+    z-index:2;
+    margin-right:-30px;
+}
+
+#syoukai .syoukai_img img {
+    width:400px;
+}
+
+#syoukai .syoukai_text {
+    width:600px;
+    background-color:rgba(255,255,255,0.7);
+    border-radius: 8px;
+    padding:20px 20px 40px 80px;
+}
+
+#syoukai .syoukai_text h2 {
+    font-size:30px;
+}
+
+#syoukai .mar {
+    margin:100px 0;
+}
+
+/*スクロール時のフェード*/
+
+.touin_text,.touin_img,.syoukai_text,.syoukai_img {
+    opacity:0;
+    transform: translateY(10px);
+}
+
+.scr_y {
+    opacity:1;
+    transform: translateY(0px);
+    transition:0.8s;
+}
+
+/*お知らせ*/
+
+#info {
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+#info h1 {
+    padding-bottom:50px;
+}
+
+#info .info_btn {
+    width:30%;
+    padding-top:30px;
+}
+
+#info .info_btn a {
+    background-color:white;
+    padding:15px 20px;
+    border:2px solid #0066FF;
+    border-radius:8px;
+    font-size: large;
+    color:#0066FF;
+}
+
+#info .info_btn a:hover {
+    background-color: #0066FF;
+    color:white;
+    transition: 0.2s;
+}
+
+#info .info_scr {
+    width:60%;
+    background-color:rgba(215, 256, 256, 0.6);
+    padding:0 30px;
+    height:400px;
+    overflow-y: scroll;
+}
+
+#info .info_scr p {
+    border-bottom:1px solid black;
+}
+
+#info .info_scr p:last-child {
+    border-bottom:none;
+}
+
+/*アクセス*/
+
+#Access {
+    position: relative;
+    z-index:2;
+    margin-bottom:-50px;
+}
+
+#Access h1 {
+    padding-top:50px;
+    padding-bottom:30px;
+}
+
+#Access p {
+    font-size:20px;
+    width:30%;
+}
+
+#Access iframe {
+    width:500px;
+    height:300px;
+}
+
+#Access .access_box {
+    margin-top:50px;
+    padding-bottom:70px;
+    background-color:white;
+    box-shadow: 3px 3px 10px 3px;
+    border-radius: 50px;
+}
+
+/*診察時間*/
+
+#time {
+    background-color:#880000;
+    color:white;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+#time h1 {
+    padding-bottom:50px;
+}
+
+#time .time_text {
+    width:40%;
+    text-align:center;
+}
+
+#time .time_text h2 {
+    font-size:40px;
+    line-height: 2;
+    margin:0;
+}
+
+#time .time_table {
+    width:60%;
+    text-align:center;
+}
+
+table {
+    border-spacing: 0;
+}
+
+td,th {
+    width:70px;
+    height:60px;
+    font-size:large;
+    border:1px solid white;
+}
+
+/*フッター*/
+
+footer {
+    background-color: #3333CC;
+    position:relative;
+}
+
+footer .list {
+    position:absolute;
+    top:-25px;
+    left:0;
+    right:0;
+}
+
+.footer-logo {
+    margin:0;
+    color:white;
+    text-align:center;
+    font-size:80%;
+    padding-top:80px;
+    padding-bottom:10px;
+}
+
+/*院長あいさつ*/
+
+#aisatu {
+    padding-top:70px;
+    padding-bottom:50px;
+}
+
+#aisatu h1 {
+    padding-bottom:50px;
+}
+
+#aisatu .aisatu_box {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#aisatu .aisatu_img {
+    z-index:2;
+    margin-right:-30px;
+}
+
+#aisatu .aisatu_img img {
+    width:400px;
+}
+
+#aisatu .aisatu_text {
+    width:600px;
+    background-color:rgba(255,255,255,0.7);
+    border-radius: 8px;
+    padding:20px 20px 20px 80px;
+}
+
+#aisatu .aisatu_text h2 {
+    font-size:30px;
+}
+

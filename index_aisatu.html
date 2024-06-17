@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>小川病院「院長あいさつ」(架空のサイト)</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index_media.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $('.han').click(function() {
+          $('.nav_media').toggleClass('nav_media_active');
+          $(this).toggleClass('active');
+          $('.back').toggleClass('back_black');
+        });
+        $('.list_media a').click(function() {
+          $('.nav_media').removeClass('nav_media_active');
+          $('.han').removeClass('active');
+          $('.back').removeClass('back_black');
+        });
+    });
+    </script>
+  </head>
+  <body>
+
+    <div class="back"></div>
+    
+  <header>
+    <div class="han"><span></span><span></span><p>MENU</p></div>
+    <div class="over">
+    <nav class="nav_media">
+      <h2>MENU</h2>
+      <ul class="list_media">
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="index.html#touin">当院について</a></li>
+        <li><a href="#aisatu">院長あいさつ</a></li>
+        <li><a href="index.html#sinryo">診療案内</a></li>
+        <li><a href="index.html#syoukai">医師紹介</a></li>
+        <li><a href="index.html#info">お知らせ</a></li>
+        <li><a href="#Access">アクセス</a></li>
+        <li><a class="first_media" href="#time">診療時間</a></li>
+      </ul>
+    </nav>
+    </div>
+    <div class="wrapper">
+      <div class="header_btn btn">
+        <a href="#">Web予約はこちら</a>
+      </div>
+      <div class="header_logo">
+        <h1>患者さんの<br>笑顔を、命を<br>守るために<br></h1>
+      </div>
+    </div>
+    <nav>
+      <ul class="list">
+        <li><a class="first" href="index.html">トップ</a></li>
+        <li><a href="index.html#touin">当院について</a></li>
+        <li><a href="#aisatu">院長あいさつ</a></li>
+        <li><a href="index.html#sinryo">診療案内</a></li>
+        <li><a href="index.html#syoukai">医師紹介</a></li>
+        <li><a href="index.html#info">お知らせ</a></li>
+        <li><a href="#Access">アクセス</a></li>
+        <li><a class="last" href="#time">診療時間</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+  <section id="aisatu">
+    <div class="wrapper">
+        <h1>院長あいさつ</h1>
+        <div class="aisatu_box">
+            <div class="aisatu_img">
+                <img src="img/ogawa.jpg">
+            </div>
+            <div class="aisatu_text">
+              <div class="wrapper_media">
+                <h2>院長：小川 正義</h2>
+                <h3>診察科目：内科・消化器内科、耳鼻咽喉科</h3>
+                <p>小川病院院長の小川正義です。小川病院は、おかげさまで2024年5月1日に開業20周年を迎えることとなりました。
+                    一つの節目ともいえるこの日を迎えることができましたのも、ひとえに皆様方のご支援、ご厚情による賜物と深く感謝いたしております。
+                    これまでの20年を振り返り、またこれからの10年を考え、もう一度私達の基本的な理念を確認しました。
+                    私達は全員でこの理念を共有し、自分のものとして受け止め、常に念頭において行動します。</p>
+              </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <section id="Access">
+    <div class="wrapper access_box">
+      <h1>アクセス</h1>
+      <div class="flex">
+        <p>愛知県名古屋市中区○○丁目ー○○<br>△△ビル3階</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1539.2150200911583!2d136.9084853800118!3d35.16951312892794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600370d155d3b53d%3A0xfe18a459eb589c51!2z44CSNDYwLTAwMDMg5oSb55-l55yM5ZCN5Y-k5bGL5biC5Lit5Yy66Yym77yT5LiB55uu77yS77yVIO-8oe-8ue-8oeaghOODk-ODqw!5e0!3m2!1sja!2sjp!4v1717983563489!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+  <section id="time">
+    <div class="wrapper">
+    <h1>診療時間</h1>
+    <div class="flex">
+      <div class="time_text">
+        <h2>小川病院</h2>
+        <h3>TEL 0123-45-6789</h3>
+        <div class="btn">
+        <a href="#">Web予約はこちら</a>
+        </div>
+      </div>
+    <div class="time_table">
+    <table>
+      <tr><th>曜日</th><td>日</td><td>月</td><td>火</td><td>水</td><td>木</td><td>金</td><td>土</td></tr>
+      <tr><th>8:30～12:00</th><td>✖</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>△</td></tr>
+      <tr><th>16:30～19:00</th><td>✖</td><td>〇</td><td>〇</td><td>〇</td><td>✖</td><td>〇</td><td>✖</td></tr>
+    </table>
+    <p>※土曜日のみ8:30～14:00、木曜午後、土曜午後、日曜、祝日は休診です。</p>
+    </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <nav>
+    <ul class="list">
+      <li><a class="first" href="index.html">トップ</a></li>
+      <li><a href="index.html#touin">当院について</a></li>
+      <li><a href="#aisatu">院長あいさつ</a></li>
+      <li><a href="index.html#sinryo">診療案内</a></li>
+      <li><a href="index.html#syoukai">医師紹介</a></li>
+      <li><a href="index.html#info">お知らせ</a></li>
+      <li><a href="#Access">アクセス</a></li>
+      <li><a class="last" href="#time">診療時間</a></li>
+    </ul>
+  </nav>
+  <p class="footer-logo">2024&copy;ogawahospital</p>
+</footer>
+</body>
+</html>

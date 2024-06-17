@@ -1,0 +1,195 @@
+@media(max-width:600px) {
+    body {
+        min-width: initial;
+    }
+
+    .wrapper {
+        width:initial;
+    }
+
+    .wrapper_media {
+        width:90%;
+        margin:0 auto;
+    }
+
+    .list {
+        display:none;
+    }
+
+    header {
+        height:800px;
+    }
+
+    .header_logo {
+        text-align:center;
+    }   
+
+    .header_logo h1 {
+        margin-top:100px;
+        font-size:10vw;
+        padding:50px 30px; 
+    }
+
+    .header_btn {
+        margin-right:5px;
+    }
+
+    /*当院について*/
+
+    #touin .touin_item {
+        flex-direction: column;
+        height:initial;
+    }
+
+    #touin .touin_text,.second_text {
+        width:100%;
+        height:initial; 
+        padding:30px 0 50px 0;
+    }
+
+    #touin .touin_img,.second_img {
+        margin-left:0;
+        margin-right:0;
+        margin-top:-30px;
+        text-align:center;
+        width:100%;
+    }
+
+    #touin .touin_img img,.second_img img{
+        width:80%;
+    }
+
+    #touin .rese {
+        flex-direction: column-reverse;
+    }
+
+    /*診療案内*/
+
+    #sinryo .sinryo_item {
+        flex-direction: column;
+    }
+
+    #sinryo .sinryo_box {
+        width:70%;
+        margin:15px auto;
+    }
+
+    #sinryo .sinryo_box h2 {
+        line-height: 1;
+    }
+
+    /*医師紹介*/
+
+    #syoukai .syoukai_box {
+        flex-direction: column;
+    }
+
+    #syoukai .syoukai_img {
+        z-index:2;
+        margin-right:0;
+        margin-bottom:-30px;
+        text-align:center;
+        width:100%;
+    }
+    
+    #syoukai .syoukai_img img {
+        width:80%;
+    }
+    
+    #syoukai .syoukai_text {
+        width:100%;
+        text-align:center;
+        border-radius: 0;
+        padding:40px 0 20px 0;
+    }
+
+    /*お知らせ*/
+
+    #info .flex {
+        flex-direction: column;
+    }
+
+    #info .info_btn {
+        width:100%;
+        text-align:center;
+        padding-top:0;
+        padding-bottom:30px;
+    }
+
+    #info .info_scr {
+        display:none;
+    }
+
+    /*アクセス*/
+
+    #Access .flex {
+        flex-direction: column;
+    }
+
+    #Access p {
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
+        font-size:initial;
+        text-align:center;
+    }
+
+    #Access iframe {
+        width:90%;
+        margin: 20px auto 0 auto;
+    }
+
+    #Access .access_box {
+        width:90%;
+        margin:0 auto;
+    }
+
+    /*診療時間*/
+
+    #time .flex {
+        flex-direction: column;
+    }
+
+    #time .time_text {
+        width:100%;
+    }
+
+    #time .time_table {
+        width:95%;
+        margin:50px auto 0 auto;
+    }
+
+    footer .footer-logo {
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+
+    /*院長あいさつ*/
+
+    #aisatu .aisatu_box {
+        flex-direction: column;
+    }
+
+    #aisatu .aisatu_img {
+        z-index:2;
+        margin-right:0;
+        margin-bottom:-30px;
+        text-align:center;
+        width:100%;
+    }
+    
+    #aisatu .aisatu_img img {
+        width:80%;
+    }
+    
+    #aisatu .aisatu_text {
+        width:100%;
+        text-align:center;
+        border-radius: 0;
+        padding:40px 0 20px 0;
+    }
+
+    #aisatu .aisatu_text p {
+        text-align:left;
+    }
+}

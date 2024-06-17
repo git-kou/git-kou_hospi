@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>小川病院(架空のサイト)</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index_media.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $('.han').click(function() {
+          $('.nav_media').toggleClass('nav_media_active');
+          $(this).toggleClass('active');
+          $('.back').toggleClass('back_black');
+        });
+        $('.list_media a').click(function() {
+          $('.nav_media').removeClass('nav_media_active');
+          $('.han').removeClass('active');
+          $('.back').removeClass('back_black');
+        });
+      });
+    </script>
+    <script>
+      $(window).scroll(function(){
+		      $('.touin_text,.touin_img,.syoukai_text,.syoukai_img').each(function(){
+			    var pos = $(this).offset().top;
+		    	var scr = $(window).scrollTop();
+			    var win = $(window).height();
+			    if (scr > pos - win + 100){
+				  $(this).addClass('scr_y');
+			};
+		});
+	});
+    </script>
+  </head>
+  <body>
+
+    <div class="back"></div>
+    
+  <header>
+    <div class="han"><span></span><span></span><p>MENU</p></div>
+    <div class="over">
+    <nav class="nav_media">
+      <h2>MENU</h2>
+      <ul class="list_media">
+        <li><a href="#">トップ</a></li>
+        <li><a href="#touin">当院について</a></li>
+        <li><a href="index_aisatu.html#aisatu">院長あいさつ</a></li>
+        <li><a href="#sinryo">診療案内</a></li>
+        <li><a href="#syoukai">医師紹介</a></li>
+        <li><a href="#info">お知らせ</a></li>
+        <li><a href="#Access">アクセス</a></li>
+        <li><a class="first_media" href="#time">診療時間</a></li>
+      </ul>
+    </nav>
+    </div>
+    <div class="wrapper">
+      <div class="header_btn btn">
+        <a href="#">Web予約はこちら</a>
+      </div>
+      <div class="header_logo">
+        <h1>患者さんの<br>笑顔を、命を<br>守るために<br></h1>
+      </div>
+    </div>
+    <nav>
+      <ul class="list">
+        <li><a class="first" href="#">トップ</a></li>
+        <li><a href="#touin">当院について</a></li>
+        <li><a href="index_aisatu.html#aisatu">院長あいさつ</a></li>
+        <li><a href="#sinryo">診療案内</a></li>
+        <li><a href="#syoukai">医師紹介</a></li>
+        <li><a href="#info">お知らせ</a></li>
+        <li><a href="#Access">アクセス</a></li>
+        <li><a class="last" href="#time">診療時間</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="touin">
+      <div class="wrapper">
+        <h1>当院について</h1>
+        <div class="touin_item">
+          <div class="touin_text wrapper-media">
+            <div class="wrapper_media">
+            <h2><span>01</span><br>患者さんに寄り添って迅速な対応を</h2>
+            <p>テキストテキストテキストテキストテキスト
+              テキストテキストテキストテキストテキスト
+              テキストテキストテキストテキストテキスト
+              テキストテキストテキストテキストテキスト
+              テキストテキストテキストテキストテキスト
+              テキストテキストテキストテキストテキスト</p>
+            </div>
+          </div>
+          <div class="touin_img">
+            <img src="img/okyaku.jpg">
+          </div>
+        </div>
+        <div class="touin_item rese">
+            <div class="touin_img second_img">
+                <img src="img/mri.jpg">
+            </div>
+            <div class="touin_text second_text">
+              <div class="wrapper_media">
+                <h2><span>02</span><br>がんなどの病気の早期発見に取り組んでいます</h2>
+                <p>テキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+        </div>
+        <div class="touin_item">
+            <div class="touin_text">
+              <div class="wrapper_media">
+              <h2><span>03</span><br>心療内科では事前に臨床看護師とモニタリングを行います</h2>
+              <p>テキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキスト
+                テキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+            <div class="touin_img">
+              <img src="img/kokoro.jpg">
+            </div>
+          </div>
+      </div>
+    </section>
+    <section id="sinryo">
+        <div class="wrapper">
+            <h1>診療案内</h1>
+            <div class="sinryo_item">
+                <div class="sinryo_box iro1">
+                    <h2>内科・消化器内科</h2>
+                    <h3>主な診察科目</h3>
+                    <p>発熱、咳、のどの痛み、腹痛、下痢、嘔吐、インフルエンザ、コロナ、
+                        消化器系のがん、胃潰瘍、逆流性食道炎、過敏性腸症候群、消化器系ポリープ、急性・慢性胃炎 など
+                    </p>
+                </div>
+                <div class="sinryo_box iro2">
+                    <h2>耳鼻咽喉科</h2>
+                    <h3>主な診察科目</h3>
+                    <p>花粉症、アレルギー性鼻炎、蓄膿症、耳鳴り、難聴、咽頭炎、扁桃炎、
+                        その他耳、鼻、喉の疾患 等
+                    </p>
+                </div>
+                <div class="sinryo_box iro3">
+                    <h2>皮膚科</h2>
+                    <h3>主な診察科目</h3>
+                    <p>一般的なできもの、粉瘤、発疹、しつこいかゆみ、水疱瘡、帯状疱疹、帯状疱疹後神経痛、皮膚がん（メラノーマ等）など</p>
+                </div>
+                <div class="sinryo_box iro4">
+                    <h2>心療内科</h2>
+                    <h3>主な診察科目</h3>
+                    <p>うつ病、双極性障害、不安障害、パニック障害、自閉症、ADHD、その他メンタルケアなど
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="syoukai">
+        <div class="wrapper">
+            <h1>医師紹介</h1>
+            <div class="syoukai_box">
+                <div class="syoukai_img">
+                    <img src="img/ogawa.jpg">
+                </div>
+                <div class="syoukai_text">
+                  <div class="wrapper_media">
+                    <h2>院長：小川 正義</h2>
+                    <h3>診察科目：内科・消化器内科、耳鼻咽喉科</h3>
+                    <p>○○○○年：○○高校卒<br>○○○○年：○○大学 医学部卒<br>○○○○年：○○大学院 医学部卒<br>
+                       ○○○○年：○○病院 耳鼻科医、消化器内科医</p>
+                  </div>
+                </div>
+            </div>
+            <div class="syoukai_box mar">
+                <div class="syoukai_img">
+                    <img src="img/kawakami.jpg">
+                </div>
+                <div class="syoukai_text">
+                  <div class="wrapper_media">
+                    <h2>医師：川上 求</h2>
+                    <h3>診察科目：内科、皮膚科</h3>
+                    <p>○○○○年：○○高校卒<br>○○○○年：○○大学 医学部卒<br>○○○○年：○○大学院 医学部卒<br>
+                      ○○○○年：○○病院 医師</p>
+                  </div>
+                </div>
+            </div>
+            <div class="syoukai_box">
+                <div class="syoukai_img">
+                    <img src="img/kousaka.jpg">
+                </div>
+                <div class="syoukai_text">
+                  <div class="wrapper_media">
+                    <h2>精神科医：高坂 優</h2>
+                    <h3>診察科目：心療内科</h3>
+                    <p>○○○○年：○○高校卒<br>○○○○年：○○大学 社会学部卒<br>○○○○年：○○大学院 心理学部卒<br>
+                      ○○○○年：○○メンタルクリニック 医師配属</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="info">
+      <div class="wrapper">
+        <h1>お知らせ</h1>
+        <div class="flex">
+          <div class="info_btn">
+            <a href="#">お知らせ一覧 →</a>
+          </div>
+          <div class="info_scr">
+            <p>2024.X.XX<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p>2024.X.XX<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p>2024.X.XX<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p>2024.X.XX<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p>2024.X.XX<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p>2024.X.XX<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p>2024.X.XX<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p>2024.X.XX<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p>2024.X.XX<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p>2024.X.XX<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p>2024.X.XX<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p>2024.X.XX<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p>2024.X.XX<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p>2024.X.XX<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p>2024.X.XX<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Access">
+      <div class="wrapper access_box">
+        <h1>アクセス</h1>
+        <div class="flex">
+          <p>愛知県名古屋市中区○○丁目ー○○<br>△△ビル3階</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1539.2150200911583!2d136.9084853800118!3d35.16951312892794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600370d155d3b53d%3A0xfe18a459eb589c51!2z44CSNDYwLTAwMDMg5oSb55-l55yM5ZCN5Y-k5bGL5biC5Lit5Yy66Yym77yT5LiB55uu77yS77yVIO-8oe-8ue-8oeaghOODk-ODqw!5e0!3m2!1sja!2sjp!4v1717983563489!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+    <section id="time">
+      <div class="wrapper">
+      <h1>診療時間</h1>
+      <div class="flex">
+        <div class="time_text">
+          <h2>小川病院</h2>
+          <h3>TEL 0123-45-6789</h3>
+          <div class="btn">
+          <a href="#">Web予約はこちら</a>
+          </div>
+        </div>
+      <div class="time_table">
+      <table>
+        <tr><th>曜日</th><td>日</td><td>月</td><td>火</td><td>水</td><td>木</td><td>金</td><td>土</td></tr>
+        <tr><th>8:30～12:00</th><td>✖</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>〇</td><td>△</td></tr>
+        <tr><th>16:30～19:00</th><td>✖</td><td>〇</td><td>〇</td><td>〇</td><td>✖</td><td>〇</td><td>✖</td></tr>
+      </table>
+      <p>※土曜日のみ8:30～14:00、木曜午後、土曜午後、日曜、祝日は休診です。</p>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <nav>
+      <ul class="list">
+        <li><a class="first" href="#">トップ</a></li>
+        <li><a href="#touin">当院について</a></li>
+        <li><a href="index_aisatu.html#aisatu">院長あいさつ</a></li>
+        <li><a href="#sinryo">診療案内</a></li>
+        <li><a href="#syoukai">医師紹介</a></li>
+        <li><a href="#info">お知らせ</a></li>
+        <li><a href="#Access">アクセス</a></li>
+        <li><a class="last" href="#time">診療時間</a></li>
+      </ul>
+    </nav>
+    <p class="footer-logo">2024&copy;ogawahospital</p>
+  </footer>
+  
+  </body>
+  </html>
