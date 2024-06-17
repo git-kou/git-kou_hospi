@@ -25,7 +25,7 @@
     }   
 
     .header_logo h1 {
-        margin-top:100px;
+        margin-top:120px;
         font-size:10vw;
         padding:50px 30px; 
     }
@@ -85,7 +85,6 @@
     }
 
     #syoukai .syoukai_img {
-        z-index:2;
         margin-right:0;
         margin-bottom:-30px;
         text-align:center;
@@ -171,7 +170,6 @@
     }
 
     #aisatu .aisatu_img {
-        z-index:2;
         margin-right:0;
         margin-bottom:-30px;
         text-align:center;
