@@ -28,16 +28,6 @@ ul {
     justify-content: space-around;
 }
 
-main {
-    background:url("img/robi.jpg");
-    background-color:rgba(255,255,255,0.8);
-    background-blend-mode:lighten;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-attachment: fixed;
-}
-
 /*レスポンシブ用*/
 
 .back {
@@ -223,6 +213,16 @@ header .list {
 .list a:hover {
     background-color:#66CCFF;
     color:white;
+}
+
+main {
+    background:url("img/robi.jpg");
+    background-color:rgba(255,255,255,0.8);
+    background-blend-mode:lighten;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
 }
 
 main h1 {
