@@ -366,6 +366,7 @@ main h1 {
 .touin_text,.touin_img,.syoukai_text,.syoukai_img {
     opacity:0;
     transform: translateY(10px);
+    transition:0.8s;
 }
 
 .scr_y {
