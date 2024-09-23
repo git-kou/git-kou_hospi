@@ -8,34 +8,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="index_media.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-      $(function() {
-        $('.han').click(function() {
-          $('.nav_media').toggleClass('nav_media_active');
-          $(this).toggleClass('active');
-          $('.back').toggleClass('back_black');
-        });
-        $('.list_media a').click(function() {
-          $('.nav_media').removeClass('nav_media_active');
-          $('.han').removeClass('active');
-          $('.back').removeClass('back_black');
-        });
-      });
-    </script>
-    <script>
-      $(window).scroll(function(){
-		      $('.touin_text,.touin_img,.syoukai_text,.syoukai_img').each(function(){
-			    var pos = $(this).offset().top;
-		    	var scr = $(window).scrollTop();
-			    var win = $(window).height();
-			    if (scr > pos - win + 100){
-				  $(this).addClass('scr_y');
-			    }else{
-				  $(this).removeClass('scr_y');
-			    }
-		});
-	});
-    </script>
+    <script src="index.js" defer></script>
   </head>
   <body>
 
