@@ -129,7 +129,7 @@ ul {
     color:#66CCFF;
 }
 
-@media(min-width:600px) {
+@media(min-width:601px) {
     .han,.back {
         display:none;
     }
@@ -184,10 +184,10 @@ header {
 }
 
 header .list {
-     position:absolute;
-     left:0;
-     right:0;
-     bottom:-28px;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:-28px;
 }
 
 .list a {
@@ -366,7 +366,7 @@ main h1 {
 .touin_text,.touin_img,.syoukai_text,.syoukai_img {
     opacity:0;
     transform: translateY(10px);
-    transition:0.8s;
+    transition: 0.8s;
 }
 
 .scr_y {
