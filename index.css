@@ -496,7 +496,7 @@ td,th {
 /*フッター*/
 
 footer {
-    background-color:#CCFFFF;
+    background-color:#11FFFF;
     position:relative;
 }
 
@@ -509,7 +509,7 @@ footer .list {
 
 .footer-logo {
     margin:0;
-    color:white;
+    color:#111111;
     text-align:center;
     font-size:80%;
     padding-top:80px;
