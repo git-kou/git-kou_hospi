@@ -456,7 +456,7 @@ main h1 {
 /*診察時間*/
 
 #time {
-    background-color:#880000;
+    background-color:#3333CC;
     color:white;
     padding-top:100px;
     padding-bottom:100px;
@@ -496,7 +496,7 @@ td,th {
 /*フッター*/
 
 footer {
-    background-color: #3333CC;
+    background-color:#66CCFF;
     position:relative;
 }
 
